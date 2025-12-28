@@ -219,7 +219,7 @@ function App() {
                   </button>
                   <button
                     onClick={handleEndTurn}
-                    disabled={!currentHero || currentHero.hasActed}
+                    disabled={!currentHero}
                   >
                     ⏭️ Завершить ход
                   </button>
