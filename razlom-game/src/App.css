@@ -1,0 +1,169 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #8b5cf6;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #8b5cf6;
+  color: #fff;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0 0;
+  color: #a78bfa;
+  font-size: 1.1rem;
+}
+
+.game-container {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.game-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.action-panel {
+  background: rgba(139, 92, 246, 0.1);
+  border: 2px solid #8b5cf6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.current-hero {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.current-hero h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.side-badge {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.closing-progress,
+.stunned {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(251, 191, 36, 0.2);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.actions button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #8b5cf6;
+  background: rgba(139, 92, 246, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.actions button:hover:not(:disabled) {
+  background: rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.selected-target {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.2);
+  border: 2px solid #ef4444;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.game-over {
+  text-align: center;
+}
+
+.game-over h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.winner {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.restart-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: 2px solid #10b981;
+  background: rgba(16, 185, 129, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.restart-btn:hover {
+  background: rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 2px solid #8b5cf6;
+  color: #a78bfa;
+}
+
+footer p {
+  margin: 0;
+}

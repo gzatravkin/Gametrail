@@ -1,0 +1,162 @@
+.game-info {
+  background: rgba(139, 92, 246, 0.1);
+  border: 2px solid #8b5cf6;
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.info-section {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.info-section h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  color: #a78bfa;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.darkness-counter {
+  text-align: center;
+}
+
+.counter-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
+}
+
+.counter-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #8b5cf6;
+}
+
+.counter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6 0%, #dc2626 100%);
+  transition: width 0.5s;
+}
+
+.warning {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: rgba(251, 191, 36, 0.2);
+  border: 1px solid #fbbf24;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+.portal-info {
+  text-align: center;
+}
+
+.portal-info > div:first-child {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.portal-effects {
+  padding: 0.5rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.heart-info {
+  text-align: center;
+}
+
+.heart-hp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ef4444;
+  margin-bottom: 0.5rem;
+}
+
+.hp-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ef4444;
+}
+
+.hp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+  transition: width 0.3s;
+}
+
+.heroes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-item {
+  padding: 0.5rem;
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid #8b5cf6;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.hero-item.active {
+  background: rgba(251, 191, 36, 0.3);
+  border-color: #fbbf24;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.hero-item.dead {
+  opacity: 0.4;
+  background: rgba(100, 100, 100, 0.2);
+  border-color: #6b7280;
+}
+
+.hero-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hero-stats-mini {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.hero-stats-mini .critical {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.monsters-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.monsters-summary > div {
+  padding: 0.4rem;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 4px;
+  border-left: 3px solid #ef4444;
+}
